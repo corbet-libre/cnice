@@ -2,7 +2,7 @@
 
 **Formulaic correspondence phrases: salutations and valedictions for every covered locale.**
 
-[![crates.io](https://img.shields.io/crates/v/cnice.svg)](https://crates.io/crates/cnice) [![npm](https://img.shields.io/npm/v/@corbet-foss/cnice.svg)](https://www.npmjs.com/package/@corbet-foss/cnice) [![PyPI](https://img.shields.io/pypi/v/cnice.svg)](https://pypi.org/project/cnice/) [![Rust API](https://docs.rs/cnice/badge.svg)](https://docs.rs/cnice)
+[![crates.io](https://img.shields.io/crates/v/cnice.svg)](https://crates.io/crates/cnice) [![npm](https://img.shields.io/npm/v/@corbet-labs/cnice.svg)](https://www.npmjs.com/package/@corbet-labs/cnice) [![PyPI](https://img.shields.io/pypi/v/cnice.svg)](https://pypi.org/project/cnice/) [![Rust API](https://docs.rs/cnice/badge.svg)](https://docs.rs/cnice)
 
 `cnice` is a facade over two deterministic correspondence libraries:
 salutations (`cnice.greet`, previously the German-only `cgreet` repo) and
@@ -12,7 +12,7 @@ new row, never new code. Same input always yields the same output:
 no models, no I/O.
 
 ```js
-import { farewell, greet } from '@corbet-foss/cnice';
+import { farewell, greet } from '@corbet-labs/cnice';
 
 greet.salutation('de-ch', 'Frau Dr. Müller');
 // Sehr geehrte Frau Dr. Müller
@@ -24,19 +24,19 @@ farewell.closing('de-ch');
 
 ## Install
 
-Version 0.1.0 is published to registries.
+Version 0.1.1 is published to registries.
 
 | Environment | Command |
 | --- | --- |
 | Rust / Cargo | `cargo add cnice` |
 | Python / pip | `python -m pip install cnice` |
 | Python / uv | `uv add cnice` |
-| Node.js / npm | `npm install @corbet-foss/cnice` |
-| pnpm | `pnpm add @corbet-foss/cnice` |
-| Yarn | `yarn add @corbet-foss/cnice` |
-| Bun | `bun add @corbet-foss/cnice` |
-| Deno | `deno add npm:@corbet-foss/cnice` |
-| Typst | `#import "@preview/cnice:0.1.0": *` |
+| Node.js / npm | `npm install @corbet-labs/cnice` |
+| pnpm | `pnpm add @corbet-labs/cnice` |
+| Yarn | `yarn add @corbet-labs/cnice` |
+| Bun | `bun add @corbet-labs/cnice` |
+| Deno | `deno add npm:@corbet-labs/cnice` |
+| Typst | `#import "@preview/cnice:0.1.1": *` |
 
 The JavaScript distribution includes compiled ESM, CommonJS,
 TypeScript declarations, and a standalone browser module. Node.js 20+ is
@@ -44,12 +44,12 @@ supported; no TypeScript loader is required.
 
 ```js
 // CommonJS
-const { greet, farewell } = require('@corbet-foss/cnice');
+const { greet, farewell } = require('@corbet-labs/cnice');
 ```
 
 ```html
 <script type="module">
-  import { greet } from 'https://cdn.jsdelivr.net/npm/@corbet-foss/cnice@0.1.0/dist/browser.js';
+  import { greet } from 'https://cdn.jsdelivr.net/npm/@corbet-labs/cnice@0.1.1/dist/browser.js';
   console.log(greet.salutation('de-ch', 'Frau Dr. Müller'));
 </script>
 ```
@@ -134,7 +134,7 @@ for generation, verification, and publication commands.
 
 ## License
 
-Copyright 2026 Julian Y. Richard Corbet. The 0.1.0 release line is licensed
+Copyright 2026 Julian Y. Richard Corbet. The 0.1.1 release line is licensed
 under [LGPL-3.0-only](https://github.com/corbet-foss/cnice/blob/main/LICENSES/LGPL-3.0-only.txt)
 [WITH LGPL-3.0-linking-exception](https://github.com/corbet-foss/cnice/blob/main/LICENSES/LGPL-3.0-only%20WITH%20LGPL-3.0-linking-exception.txt),
 with the incorporated [GPL version 3](https://github.com/corbet-foss/cnice/blob/main/LICENSES/GPL-3.0-only.txt).
