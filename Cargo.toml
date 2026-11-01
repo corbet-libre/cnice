@@ -1,6 +1,6 @@
 [package]
 name = "cnice"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2024"
 rust-version = "1.94"
 description = "Formulaic correspondence phrases: German salutations and locale-specific valedictions (cnice.greet + cnice.farewell)"
@@ -11,7 +11,7 @@ documentation = "https://docs.rs/cnice"
 keywords = ["i18n", "correspondence", "locale"]
 categories = ["internationalization", "text-processing"]
 
-include = ["Cargo.toml", "Cargo.lock", "src/**", "tables/**", "tests/**", "README.md", "CHANGELOG.md", "LICENSE", "LICENSE.md", "LICENSES/**"]
+include = ["Cargo.toml", "Cargo.lock", "src/**", "tables/**", "tests/**", "typst.toml", "typst/**", "README.md", "CHANGELOG.md", "LICENSE", "LICENSE.md", "LICENSES/**"]
 
 [lints.rust]
 unsafe_code = "forbid"
